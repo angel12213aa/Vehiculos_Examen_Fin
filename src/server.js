@@ -13,9 +13,8 @@ const PORT = process.env.PORT || 7001;
 app.set("port", PORT);
 
 const allowedOrigins = [
-  "https://www.dominio1.com",
-  "https://www.dominio2.com",
-  "http://localhost:3000"
+  "http://localhost:3000",
+  "http://localhost:7000"
 ];
 
 const corsOptions = {
