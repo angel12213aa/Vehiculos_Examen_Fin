@@ -5,7 +5,7 @@ import { usuariosLogin } from "../controllers/usuario_controller.js";
 
 const router = Router()
 
-router.post("/cliente/login", usuariosLogin)
+router.post("/cliente/login", clienteLogin)
 
 router.post("/cliente/reserva", verifyToken, createReserva)
 router.put("/cliente/reserva", verifyToken, updateReserva)
