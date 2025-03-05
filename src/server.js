@@ -15,7 +15,8 @@ app.set("port", PORT);
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:7000",
-  "http://localhost:5173"
+  "http://localhost:5173",
+  "https://sistema-reservaciones-autos.netlify.app"
 ];
 
 const corsOptions = {
