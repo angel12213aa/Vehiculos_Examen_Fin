@@ -26,15 +26,7 @@ const usuariosLogin = async (req, res) => {
             })
         }
         
-        if (req.user.role === "usuario")
-        {
-            const user = await Usuarios.findOne({email})
-        }
-        else
-        {
-            const user = await Cliente.findOne({email})
-        }
-        
+        const user = await Usuarios.findOne({email})
         if (!user)
         {
             return res.status(418).json({msg: "El usuario no existe"})
